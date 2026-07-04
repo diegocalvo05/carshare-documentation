@@ -1,0 +1,44 @@
+site_name: CarShareSV
+site_description: Technical documentation for the CarShareSV car-sharing platform
+site_author: CarShareSV Team
+repo_url: https://github.com/diegocalvo05/carshare-all
+repo_name: carshare-all
+
+theme:
+  name: material
+  palette:
+    primary: red
+    accent: deep purple
+  logo: https://raw.githubusercontent.com/diegocalvo05/carshare-all/main/frontend/CarShareSV-Frontend/public/carshareLogo.svg
+  favicon: https://raw.githubusercontent.com/diegocalvo05/carshare-all/main/frontend/CarShareSV-Frontend/public/carshareLogo.svg
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Setup: setup.md
+  - Architecture: architecture.md
+  - Backend:
+    - Overview: backend/overview.md
+    - API Reference: backend/api.md
+    - Database Schema: backend/database.md
+  - Frontend:
+    - Overview: frontend/overview.md
+  - Deployment: deployment.md
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+
+copyright: Copyright &copy; 2025 CarShareSV
